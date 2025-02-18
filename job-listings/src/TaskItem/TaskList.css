@@ -1,0 +1,11 @@
+/* TaskItem.css */
+.job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Adds spacing between job cards */
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+    background: hsl(180, 52%, 96%);
+}

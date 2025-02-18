@@ -1,0 +1,66 @@
+/* JobItem.css */
+.job-card {
+    width: 900px;
+    /* Adjust width */
+    background: hsl(180, 52%, 96%);
+    /* Light Grayish Cyan */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    font-family: "Arial", sans-serif;
+}
+
+.job-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.company-name {
+    color: hsl(180, 8%, 52%);
+    /* Dark Grayish Cyan */
+    font-size: 14px;
+}
+
+.job-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: hsl(180, 14%, 20%);
+    /* Very Dark Grayish Cyan */
+    margin: 5px 0;
+}
+
+.job-meta {
+    font-size: 12px;
+    color: hsl(180, 8%, 52%);
+    /* Dark Grayish Cyan */
+}
+
+.right {
+    display: flex;
+    gap: 10px;
+}
+
+.language-badge {
+    background: hsl(180, 31%, 95%);
+    /* Light Grayish Cyan (Filter Tablets) */
+    color: hsl(180, 29%, 50%);
+    /* Desaturated Dark Cyan */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
