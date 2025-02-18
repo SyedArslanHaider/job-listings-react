@@ -9,11 +9,13 @@ function TaskItem({ job }) {
             <h4 className="company-name">{job.company}</h4>
             <h3 className="job-title">{job.position}</h3>
             <p className="job-meta">
-              {job.postedAt} • {job.contract} • {job.location}
+              {job.postedAt} . {job.contract} . {job.location}
             </p>
           </div>
         </div>
         <div className="right">
+          <span className="language-badge">{job.role}</span>
+          <span className="language-badge">{job.level}</span>
           {job.languages.map((lang, index) => (
             <span key={index} className="language-badge">
               {lang}
