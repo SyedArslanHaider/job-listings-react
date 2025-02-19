@@ -1,5 +1,23 @@
 import "./TaskItem.css";
-function TaskItem({ job }) {
+interface Job {
+  id: number;
+  company: string;
+  logo: string;
+  new: boolean;
+  featured: boolean;
+  position: string;
+  role: string;
+  level: string;
+  postedAt: string;
+  contract: string;
+  location: string;
+  languages: string[];
+  tools: string[];
+}
+interface TaskItemProps {
+  job: Job;
+}
+function TaskItem({ job }: TaskItemProps) {
   return (
     <div className="job-card">
       <div className="job-details">
@@ -16,9 +34,9 @@ function TaskItem({ job }) {
         <div className="right">
           <span className="language-badge">{job.role}</span>
           <span className="language-badge">{job.level}</span>
-          {job.languages.map((lang, index) => (
+          {job.languages.map((languages, index) => (
             <span key={index} className="language-badge">
-              {lang}
+              {languages}
             </span>
           ))}
         </div>
